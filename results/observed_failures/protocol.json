@@ -1,0 +1,34 @@
+{
+  "device": "cuda",
+  "seeds": [
+    51,
+    52,
+    53
+  ],
+  "partition_seed": 20260901,
+  "observed_failure_definition": "Trials absent from the complete-case dataset because at least one source stream was not indexed, empty, or incompatible with the required schema. No test labels select failure cases.",
+  "schema_replay_definition": {
+    "source_trial": "S32_1",
+    "observed_missing_required_columns": [
+      "A1",
+      "Fp2",
+      "F4",
+      "Cz",
+      "T5",
+      "P4",
+      "O1",
+      "O2"
+    ],
+    "direct_model_input_channels_replayed": [
+      "Fp2",
+      "F4",
+      "Cz",
+      "T5",
+      "P4",
+      "O1",
+      "O2"
+    ],
+    "note": "A1 is a rereferencing channel rather than a model input. The conservative observed_eeg_rejected condition marks the whole EEG stream unavailable; the attenuation sweep replays only the seven directly corresponding model-input channels."
+  },
+  "inference": "For subjects present in the complete-case cohort, only their subject-disjoint held-out fold is used. A subject absent from all complete folds is evaluated by a fixed five-fold ensemble and reported separately from the internal comparison."
+}

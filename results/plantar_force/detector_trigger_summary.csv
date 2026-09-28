@@ -1,0 +1,11 @@
+condition,exact_zero_fter_trigger_rate,detector_scope
+clean_both,0.0,exact-zero channel only; not a generic fault detector
+left_only,0.0,exact-zero channel only; not a generic fault detector
+right_only,0.0,exact-zero channel only; not a generic fault detector
+sensor_dead_bilateral,1.0,exact-zero channel only; not a generic fault detector
+near_dead_bilateral,0.0,exact-zero channel only; not a generic fault detector
+contact_loss_bilateral,0.0,exact-zero channel only; not a generic fault detector
+saturation_bilateral,0.0,exact-zero channel only; not a generic fault detector
+drift_bilateral,0.0,exact-zero channel only; not a generic fault detector
+packet_loss_bilateral,0.0,exact-zero channel only; not a generic fault detector
+gain_miscalibration,0.0,exact-zero channel only; not a generic fault detector

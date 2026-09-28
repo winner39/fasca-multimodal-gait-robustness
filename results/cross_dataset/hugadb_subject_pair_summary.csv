@@ -1,0 +1,2 @@
+baseline,proposed,subjects,baseline_mean,proposed_mean,paired_delta,ci_low,ci_high,improved,tied,wilcoxon_statistic,wilcoxon_p
+actionmae,fasca_kd,18,0.7297507978530842,0.7343532694677746,0.004602471614690585,-0.002741068212501977,0.012221780455638005,10,0,63.0,0.34654998779296875

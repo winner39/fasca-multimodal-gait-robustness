@@ -1,0 +1,17 @@
+dataset: physionet_gait_in_parkinsons_disease_v1_0_0
+split:
+  design: leave_one_study_out
+  validation_seed: 20260706
+  optimization_seeds: [101, 102, 103]
+training:
+  optimizer: AdamW
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  batch_size: 64
+  maximum_epochs: 30
+  early_stopping_patience: 6
+  windows_per_subject_per_epoch: 16
+statistics:
+  participant_bootstrap_repeats: 20000
+  bootstrap_seed: 20260706
+

@@ -1,0 +1,29 @@
+methods:
+  - Centaur
+  - ADAPT
+  - CIMSleepNet
+  - EmbraceNet_FASCA
+shared_protocol:
+  folds: 5
+  partition_seed: 20260901
+  optimization_seeds: [51, 52, 53]
+  optimizer: AdamW
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  batch_size: 128
+  maximum_epochs: 40
+  early_stopping_patience: 8
+  availability_sampling: uniform_over_15_nonempty_masks
+  checkpoint_selection: validation_availability_score_only
+model_settings:
+  Centaur:
+    denoisers: one_per_modality
+    fusion: masked_self_attention
+  ADAPT:
+    anchor: imu
+    common_token_dim: 64
+    fusion: masked_multimodal_transformer
+  CIMSleepNet:
+    input_unit: independent_gait_window
+    missing_modality_path: latent_imagination
+

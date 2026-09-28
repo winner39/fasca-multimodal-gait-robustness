@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+data/
+artifacts/
+checkpoints/
+*.pt
+*.pth
+scripts/finalize_dataset.ps1
+scripts/run_pipeline_after_download.ps1
+

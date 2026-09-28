@@ -1,0 +1,2 @@
+reference_method,comparison_method,endpoint,primary_endpoint,subjects,reference_subject_mean,comparison_subject_mean,paired_delta,bootstrap_ci_low,bootstrap_ci_high,subjects_improved,subjects_tied,wilcoxon_statistic,wilcoxon_p,rank_biserial,holm_p_within_comparison
+fault_triggered_router,embracenet_fasca_kd,joint_fault_mean,True,55,0.755084175084175,0.7457912457912458,0.009292929292929287,0.0023569023569023533,0.016296296296296284,20,27,97.5,0.01607417686038687,0.5197044334975369,0.04139072186476665

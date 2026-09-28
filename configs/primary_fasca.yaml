@@ -1,0 +1,42 @@
+dataset:
+  name: physionet_multimodal_gait_v1_0_0
+  target_hz: 100
+  common_seconds: 48
+  window_seconds: 2
+  overlap_seconds: 0
+split:
+  folds: 5
+  partition_seed: 20260901
+  optimization_seeds: [51, 52, 53]
+scaling:
+  fit_scope: outer_fold_training_participants
+  center: channel_median
+  scale: channel_iqr
+  clip: 10.0
+training:
+  optimizer: AdamW
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  batch_size: 128
+  maximum_epochs: 35
+  early_stopping_patience: 8
+  label_smoothing: 0.05
+  distillation_temperature: 3
+  distillation_weight: 0.20
+  clean_view_weight: 0.50
+  checkpoint_selection:
+    clean_availability_score_weight: 0.90
+    mixed_corruption_score_weight: 0.10
+availability:
+  sampling: uniform_over_15_nonempty_masks
+corruption:
+  profile: sensor_structured_drop_gain_drift_clip
+  modality_probability: 0.35
+  severity_min: 0.15
+  severity_max: 0.75
+  warmup_epochs: 5
+statistics:
+  participant_bootstrap_repeats: 20000
+  availability_ci_seed: 20260928
+  calibration_bootstrap_seed: 20260704
+

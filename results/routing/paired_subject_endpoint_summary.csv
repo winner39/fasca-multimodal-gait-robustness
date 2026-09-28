@@ -1,0 +1,11 @@
+reference_method,comparison_method,endpoint,primary_endpoint,subjects,reference_subject_mean,comparison_subject_mean,paired_delta,bootstrap_ci_low,bootstrap_ci_high,subjects_improved,subjects_tied,wilcoxon_statistic,wilcoxon_p,rank_biserial,holm_p_within_comparison
+fault_triggered_router,embracenet_fasca_kd,single_modality_mean,False,55,0.894074074074074,0.894074074074074,0.0,0.0,0.0,0,55,0.0,,0.0,
+fault_triggered_router,embracenet_fasca_kd,joint_fault_mean,True,55,0.755084175084175,0.7457912457912458,0.009292929292929287,0.0023569023569023533,0.016296296296296284,20,27,97.5,0.01607417686038687,0.5197044334975369,0.04139072186476665
+fault_triggered_router,embracenet_fasca_kd,all_corruptions_mean,False,55,0.8662760942760945,0.8644175084175088,0.0018585858585858563,0.000484848484848496,0.0032727272727272596,20,27,95.0,0.01379690728825555,0.5320197044334976,0.04139072186476665
+fault_triggered_router,embracenet_fasca_kd,joint_noise_10db,False,55,0.9148148148148149,0.9148148148148149,0.0,0.0,0.0,0,55,0.0,,0.0,
+fault_triggered_router,embracenet_fasca_kd,joint_channel_dropout_30,False,55,0.5936026936026936,0.547138047138047,0.04646464646464647,0.0127946127946128,0.08114478114478113,20,27,87.0,0.008175269391517697,0.5714285714285714,0.03270107756607079
+fault_triggered_router,embracenet_fasca_kd,joint_structured_dropout_30,False,55,0.6282828282828283,0.5952861952861952,0.03299663299663302,-0.005050505050505027,0.07205387205387206,20,25,149.5,0.08751325824216125,0.35698924731182796,0.08751325824216125
+fault_triggered_router,embracenet_fasca_kd,joint_packet_loss_30,False,55,0.8562289562289562,0.8562289562289562,0.0,0.0,0.0,0,55,0.0,,0.0,
+fault_triggered_router,embracenet_fasca_kd,joint_shift_250ms,False,55,0.9164983164983166,0.9164983164983166,0.0,0.0,0.0,0,55,0.0,,0.0,
+fault_triggered_router,embracenet_fasca_kd,joint_gain_1.5,False,55,0.4942760942760942,0.4942760942760942,0.0,0.0,0.0,0,55,0.0,,0.0,
+fault_triggered_router,embracenet_fasca_kd,clean,False,55,0.9239057239057239,0.9239057239057239,0.0,0.0,0.0,0,55,0.0,,0.0,

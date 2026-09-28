@@ -1,0 +1,23 @@
+{
+  "analysis": "primary trial-level calibration",
+  "probability_aggregation": "mean across windows within trial, then mean across three seeds for bootstrap analysis",
+  "endpoints": {
+    "full": "Complete input",
+    "all_15": "All 15 availability patterns"
+  },
+  "metrics": {
+    "brier": "multiclass Brier score: mean sum of squared probability errors across classes",
+    "ece10": "top-label expected calibration error with 10 equal-width confidence bins",
+    "nll": "mean negative log likelihood of the true class"
+  },
+  "bootstrap": {
+    "unit": "subject",
+    "samples": 20000,
+    "seed": 20260704,
+    "interval": "percentile 95%"
+  },
+  "source_roots": {
+    "EmbraceNet": "D:\\AIGC\\Codex\\multimodal\\artifacts\\multimodel_confirmatory\\main",
+    "EmbraceNet+FASCA": "D:\\AIGC\\Codex\\multimodal\\artifacts\\fasca_factorial_confirmatory"
+  }
+}

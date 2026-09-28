@@ -1,0 +1,4 @@
+reference_method,comparison_method,endpoint,primary_endpoint,subjects,reference_subject_mean,comparison_subject_mean,paired_delta,bootstrap_ci_low,bootstrap_ci_high,subjects_improved,subjects_tied,wilcoxon_statistic,wilcoxon_p,rank_biserial,holm_p_within_comparison
+embracenet_fasca_kd,adapt_adaptation,joint_fault_mean,True,55,0.7457912457912458,0.5755555555555555,0.17023569023569027,0.14491582491582491,0.19636363636363632,54,1,0.0,1.6212928352058164e-10,1.0,1.6212928352058164e-09
+embracenet_fasca_kd,centaur_adaptation,joint_fault_mean,True,55,0.7457912457912458,0.8127946127946125,-0.067003367003367,-0.089496632996633,-0.04343434343434344,5,6,101.0,3.601037763783435e-07,-0.8351020408163266,3.2409339874050917e-06
+embracenet_fasca_kd,cimsleepnet_adaptation,joint_fault_mean,True,55,0.7457912457912458,0.577979797979798,0.16781144781144783,0.1470707070707071,0.189023569023569,54,1,0.0,1.6222359859325676e-10,1.0,1.6222359859325675e-09

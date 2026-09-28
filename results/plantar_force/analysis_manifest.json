@@ -1,0 +1,50 @@
+{
+  "protocol": "docs/gaitpdb_clinical_external_protocol.md",
+  "subjects": 165,
+  "studies": [
+    "Ga",
+    "Ju",
+    "Si"
+  ],
+  "methods": [
+    "baseline",
+    "fasca"
+  ],
+  "conditions": [
+    "clean_both",
+    "left_only",
+    "right_only",
+    "sensor_dead_bilateral",
+    "near_dead_bilateral",
+    "contact_loss_bilateral",
+    "saturation_bilateral",
+    "drift_bilateral",
+    "packet_loss_bilateral",
+    "gain_miscalibration"
+  ],
+  "fault_conditions": [
+    "sensor_dead_bilateral",
+    "near_dead_bilateral",
+    "contact_loss_bilateral",
+    "saturation_bilateral",
+    "drift_bilateral",
+    "packet_loss_bilateral",
+    "gain_miscalibration"
+  ],
+  "probability_aggregation": "mean across windows within subject during evaluation, then mean across optimization seeds for analysis",
+  "training_stability": "seed_condition_metrics.csv reports performance before optimization-seed probability averaging",
+  "study_summary_note": "Study-specific estimates are descriptive and expose cross-study heterogeneity; no study-level significance claim is made.",
+  "detector_scope": "The exact-zero FTER detector is expected to trigger only for the locked exact-dead condition.",
+  "bootstrap": {
+    "unit": "subject",
+    "samples": 20000,
+    "seed": 20260706,
+    "interval": "percentile 95%"
+  },
+  "post_hoc_sensitivity_bootstrap": {
+    "unit": "subject within held-out study",
+    "samples": 20000,
+    "seed": 20260707,
+    "interval": "percentile 95%"
+  }
+}

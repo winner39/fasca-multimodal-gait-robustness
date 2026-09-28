@@ -1,0 +1,4 @@
+reference_method,comparison_method,endpoint,subjects,paired_delta,bootstrap_ci_low,bootstrap_ci_high,subjects_improved,subjects_tied
+embracenet_fasca_kd,centaur_adaptation,fault_30,55,-0.028035914702581384,-0.0536484287317621,0.0009320987654320406,7,0
+embracenet_fasca_kd,adapt_adaptation,fault_30,55,0.11370370370370372,0.08900112233445569,0.14182996632996633,54,0
+embracenet_fasca_kd,cimsleepnet_adaptation,fault_30,55,0.10677890011223348,0.08390572390572394,0.13126851851851853,53,0

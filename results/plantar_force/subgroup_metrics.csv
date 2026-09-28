@@ -1,0 +1,17 @@
+method,condition_group,subgroup_type,subgroup,subjects,metric,value
+baseline,clean,gender,male,98,macro_f1,0.7525252525252526
+baseline,clean,gender,female,67,macro_f1,0.723901098901099
+baseline,clean,hoehen_yahr,<=2,55,sensitivity,0.7272727272727273
+baseline,clean,hoehen_yahr,>2,38,sensitivity,0.8421052631578947
+baseline,fault_mean,gender,male,98,macro_f1,0.7444787901044909
+baseline,fault_mean,gender,female,67,macro_f1,0.6882394488756797
+baseline,fault_mean,hoehen_yahr,<=2,55,sensitivity,0.7168831168831168
+baseline,fault_mean,hoehen_yahr,>2,38,sensitivity,0.7857142857142857
+fasca,clean,gender,male,98,macro_f1,0.741642939997891
+fasca,clean,gender,female,67,macro_f1,0.7607142857142857
+fasca,clean,hoehen_yahr,<=2,55,sensitivity,0.6363636363636364
+fasca,clean,hoehen_yahr,>2,38,sensitivity,0.8947368421052632
+fasca,fault_mean,gender,male,98,macro_f1,0.7495623765932684
+fasca,fault_mean,gender,female,67,macro_f1,0.7616688388045753
+fasca,fault_mean,hoehen_yahr,<=2,55,sensitivity,0.6857142857142857
+fasca,fault_mean,hoehen_yahr,>2,38,sensitivity,0.8646616541353384
